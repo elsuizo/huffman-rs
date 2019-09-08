@@ -1,3 +1,4 @@
+/// Huffman compression algorithm in Rust programming language
 use std::io::{BufRead, BufReader};
 use std::fs::File;
 use std::collections::HashMap;
