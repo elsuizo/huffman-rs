@@ -20,6 +20,8 @@ fn source_statistics(file_path: &str) -> Result<HashMap<char, u32>, std::io::Err
 }
 
 fn main() {
+    // NOTE(elsuizo:2019-09-07): no se porque los paths relativos no andan(o sea
+    // ../Files/castellano.txt)
     let file_path = "/home/elsuizo/Repos/huffman-rs/Files/castellano.txt";
     let mut probs: HashMap<char, u32> = HashMap::new();
     probs = source_statistics(file_path).unwrap();
